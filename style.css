@@ -1,0 +1,381 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
+/*(work)*/
+/*(play)*/
+/*(study)*/
+/*(exercise)*/
+/*(social)*/
+/*(self care)*/
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "Rubik", sans-serif;
+}
+
+body {
+  background-color: #0f1424;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.cards-container {
+  width: 100%;
+  max-width: 500px;
+  padding: 2rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
+  gap: 1.5rem;
+}
+
+.profile-card {
+  background-color: #1c1f4a;
+  border-radius: 15px;
+}
+
+.profile-info {
+  border-radius: 15px;
+  background-color: #5847eb;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.profile-info .profile-pic {
+  border-radius: 50%;
+  width: 65px;
+  outline: 3px solid white;
+}
+
+.profile-info .profile-text {
+  color: #bdc1ff;
+}
+
+.profile-info .profile-text p {
+  font-size: 0.9rem;
+  font-weight: 300;
+  margin-bottom: 0.2rem;
+}
+
+.profile-info .profile-text .name {
+  font-size: 20px;
+  font-weight: 300;
+  color: white;
+}
+
+.options-container {
+  padding: 1.3rem 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.options-container .button {
+  padding: 0 0.2rem;
+  font-size: 1rem;
+  font-weight: 400;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: #6f76c8;
+  -webkit-transition: color 0.2s ease;
+  transition: color 0.2s ease;
+}
+
+.options-container .button:hover {
+  color: white;
+  cursor: pointer;
+}
+
+.card-top {
+  overflow: hidden;
+  z-index: 3;
+  position: relative;
+  background-color: #ff8c66;
+  border-radius: 15px 15px 15px 15px;
+}
+
+.icon {
+  position: absolute;
+  z-index: -1;
+  right: 1rem;
+  top: -1rem;
+}
+
+.card-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 0.5rem;
+  z-index: 2;
+  margin-top: 2.5rem;
+  padding: 2rem;
+  background-color: #1c1f4a;
+  border-radius: 15px 15px 0 0;
+  -webkit-transition: background-color 0.15s ease;
+  transition: background-color 0.15s ease;
+}
+
+.card-info:hover {
+  background-color: #434881;
+  cursor: pointer;
+}
+
+.card-info-top {
+  color: white;
+  font-size: 17px;
+  font-weight: 500;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card-info-top .dots:hover {
+  cursor: pointer;
+}
+
+.card-info-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 0.8rem;
+}
+
+.card-info-bottom .hours {
+  font-size: 1.85rem;
+  color: white;
+  font-weight: 300;
+}
+
+.card-info-bottom .date-info {
+  color: #bdc1ff;
+}
+
+.work {
+  background-color: #ff8c66;
+}
+
+.play {
+  background-color: #56c2e6;
+}
+
+.study {
+  background-color: #ff5c7c;
+}
+
+.exercise {
+  background-color: #4acf81;
+}
+
+.social {
+  background-color: #7536d3;
+}
+
+.self-care {
+  background-color: #f1c65b;
+}
+
+@media (min-width: 1000px) {
+  body {
+    height: 100vh;
+    background-color: #0f1424;
+    display: -ms-grid;
+    display: grid;
+    place-items: center;
+  }
+  .cards-container {
+    max-width: 1060px;
+    width: 100%;
+    padding: 2rem;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[4];
+        grid-template-columns: repeat(4, 1fr);
+    -ms-grid-rows: (1fr)[2];
+        grid-template-rows: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+  .profile-card {
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 2;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-area: 1 / 1 / 3 / 2;
+    background-color: #1c1f4a;
+    border-radius: 15px;
+  }
+  .profile-info {
+    border-radius: 15px;
+    background-color: #5847eb;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    gap: 1rem;
+    padding: 2rem;
+  }
+  .profile-info .profile-pic {
+    border-radius: 50%;
+    width: 65px;
+    outline: 3px solid white;
+    margin-bottom: 0.8rem;
+  }
+  .profile-info .profile-text {
+    color: #bdc1ff;
+  }
+  .profile-info .profile-text p {
+    font-size: 0.9rem;
+    font-weight: 300;
+    margin-bottom: 0.3rem;
+  }
+  .profile-info .profile-text .name {
+    font-size: 2.1rem;
+    font-weight: 300;
+    color: white;
+    margin-bottom: 2.5rem;
+  }
+  .options-container {
+    padding: 1.3rem 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    gap: 1.2rem;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .options-container .button {
+    padding: 0 0.2rem;
+    font-size: 1rem;
+    font-weight: 400;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #6f76c8;
+    -webkit-transition: color 0.2s ease;
+    transition: color 0.2s ease;
+  }
+  .options-container .button:hover {
+    color: white;
+    cursor: pointer;
+  }
+  .card-top {
+    overflow: hidden;
+    z-index: 3;
+    position: relative;
+    border-radius: 15px 15px 15px 15px;
+  }
+  .card-info {
+    height: 85%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 1.5rem;
+    z-index: 2;
+    margin-top: 2.2rem;
+    padding: 2rem;
+    background-color: #1c1f4a;
+    border-radius: 15px 15px 0 0;
+    -webkit-transition: background-color 0.15s ease;
+    transition: background-color 0.15s ease;
+  }
+  .card-info:hover {
+    background-color: #434881;
+    cursor: pointer;
+  }
+  .card-info-top {
+    color: white;
+    font-size: 17px;
+    font-weight: 500;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .card-info-top .dots:hover {
+    cursor: pointer;
+  }
+  .card-info-bottom {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    font-size: 0.8rem;
+  }
+  .card-info-bottom .hours {
+    font-size: 2.85rem;
+    color: white;
+    font-weight: 300;
+    margin-bottom: 0.5rem;
+  }
+  .card-info-bottom .date-info {
+    color: #bdc1ff;
+  }
+}
+/*# sourceMappingURL=style.css.map */
