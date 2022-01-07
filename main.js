@@ -60,10 +60,15 @@ function getData(e) {
 
     let hours = document.querySelectorAll(".hours");
     let timeInfo = document.querySelectorAll(".date-info");
+    let infoDiv = document.querySelectorAll(".card-info-bottom");
 
     if (buttonText == "daily") {
       for (let j = 0; j < hours.length; j++) {
+        infoDiv[j].style.animation = "none";
+        infoDiv[j].offsetHeight;
+        infoDiv[j].style.animation = "fly-out 0.6s normal ease";
         hours[j].innerHTML = `${data[j].timeframes.daily.current}hrs`;
+        infoDiv[j].style.animation = "fly-in 0.6s normal ease";
       }
       for (let z = 0; z < timeInfo.length; z++) {
         timeInfo[z].innerHTML = `Last day - ${data[z].timeframes.daily.previous}hrs`;
@@ -72,7 +77,11 @@ function getData(e) {
 
     if (buttonText == "weekly") {
       for (let j = 0; j < hours.length; j++) {
+        infoDiv[j].style.animation = "none";
+        infoDiv[j].offsetHeight;
+        infoDiv[j].style.animation = "fly-out 0.6s normal ease";
         hours[j].innerHTML = `${data[j].timeframes.weekly.current}hrs`;
+        infoDiv[j].style.animation = "fly-in 0.6s normal ease";
       }
       for (let z = 0; z < timeInfo.length; z++) {
         timeInfo[z].innerHTML = `Last week- ${data[z].timeframes.weekly.previous}hrs`;
@@ -81,7 +90,11 @@ function getData(e) {
 
     if (buttonText == "monthly") {
       for (let j = 0; j < hours.length; j++) {
+        infoDiv[j].style.animation = "none";
+        infoDiv[j].offsetHeight;
+        infoDiv[j].style.animation = "fly-out 0.6s normal ease";
         hours[j].innerHTML = `${data[j].timeframes.monthly.current}hrs`;
+        infoDiv[j].style.animation = "fly-in 0.6s normal ease";
       }
       for (let z = 0; z < timeInfo.length; z++) {
         timeInfo[z].innerHTML = `Last month - ${data[z].timeframes.monthly.previous}hrs`;
