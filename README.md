@@ -2,7 +2,8 @@
 
 ## Welcome! 👋
 
-Thanks for checking out this front-end coding challenge.
+You can see the live version of this app here :
+https://time-tracker-app-igorostojic.netlify.app/
 
 This is a solution to the [Time tracking dashboard challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/time-tracking-dashboard-UIQ7167Jw).
 
