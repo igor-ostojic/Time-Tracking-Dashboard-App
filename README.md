@@ -10,4 +10,4 @@ https://time-tracker-app-igorostojic.netlify.app/
 ![Design preview for the Time tracking dashboard coding challenge](./design/desktop-preview.jpg)
 
 
-Practiced fetching data from JSON and rendering data dynamically on the page.
+
